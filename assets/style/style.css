@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --text: #242323;
+    --theme: #EBD96B;
+}
+
+* {
+    font-family: 'poppins';
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0 5%;
+}
+
+
+/*  ====== Header ====== */
+header {
+    display: flex;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a img {
+    height: 45px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 48px;
+}
+
+header nav .hamburger {
+    display: none;
+}
+
+header nav ul li {
+    font-size: 16px;
+    list-style: none;
+    text-transform: uppercase;
+}
+header nav ul li a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+
+/*  ====== Banner ====== */
+.banner img {
+    width: 100%;
+}
+
+/*  ====== store ====== */
+.store {
+    margin-top: 40px;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--theme);
+}
+
+.store img {
+    height: 36%;
+}
+
+
+@media screen and (max-width: 780px) {
+    
+    header nav .hamburger {
+        display: block;
+    }
+    header nav ul {
+        display: none;
+    }
+    .store {
+        justify-content: center;
+    }
+
+    .store img {
+        padding: 10px;
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header a img {
+        height: 24px;
+    }
+
+
+
+    .store {
+        margin-top: 20px;
+        padding: 10px 0;
+    }
+    .store img {
+        padding: 0 10px;
+        height: 30px;
+    }
+}
